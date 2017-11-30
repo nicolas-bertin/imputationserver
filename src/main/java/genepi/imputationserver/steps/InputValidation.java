@@ -134,7 +134,7 @@ public class InputValidation extends WorkflowStep {
 		}
 
 		//
-		RefPanel panel = panels.getById(reference);
+		RefPanel panel = panels.getById(reference, context.getData("refpanel"));
 		if (panel == null) {
 			context.endTask("Reference '" + reference + "' not found.", WorkflowContext.ERROR);
 			return false;
@@ -298,7 +298,7 @@ public class InputValidation extends WorkflowStep {
 		}
 
 		//
-		RefPanel panel = panels.getById(reference);
+		RefPanel panel = panels.getById(reference, context.getData("refpanel"));
 		if (panel == null) {
 			StringBuilder report = new StringBuilder();
 			report.append("Reference '" + reference + "' not found.\n");

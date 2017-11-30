@@ -94,7 +94,7 @@ public class ImputationMinimac3 extends ParallelHadoopJobStep {
 			return false;
 		}
 
-		RefPanel panel = panels.getById(reference);
+		RefPanel panel = panels.getById(reference, context.getData("refpanel"));
 		if (panel == null) {
 			context.error("reference panel '" + reference + "' not found.");
 			return false;

@@ -63,7 +63,7 @@ public class FastQualityControl extends WorkflowStep {
 		}
 
 		// check reference panel
-		RefPanel panel = panels.getById(reference);
+		RefPanel panel = panels.getById(reference, context.getData("refpanel"));
 		if (panel == null) {
 			context.error("Reference '" + reference + "' not found.");
 			context.error("Available references:");
