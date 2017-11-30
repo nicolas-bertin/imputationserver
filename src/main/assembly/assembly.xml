@@ -5,6 +5,7 @@
 
 	<id>assembly</id>
 
+
 	<formats>
 		<format>zip</format>
 		<format>tar.gz</format>
@@ -32,7 +33,7 @@
 		<file>
 			<outputDirectory>/</outputDirectory>
 			<source>${project.build.directory}/${project.artifactId}.jar</source>
-			<destName>minimac/${project.artifactId}.jar</destName>
+			<destName>${project.artifactId}.jar</destName>
 		</file>
 	</files>
 

@@ -64,7 +64,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -72,7 +72,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -112,7 +112,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -142,7 +142,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -150,7 +150,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -240,7 +240,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -248,7 +248,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -296,7 +296,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -304,7 +304,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -371,7 +371,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -379,7 +379,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -420,7 +420,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -452,7 +452,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -460,7 +460,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -510,7 +510,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -556,7 +556,7 @@ public class ImputationMinimac3Test {
 	@Test
 	public void testPipelineWithShapeIt() throws IOException, ZipException {
 
-		if (!new File("files/minimac/bin/shapeit").exists()) {
+		if (!new File("files/bin/shapeit").exists()) {
 			return;
 		}
 
@@ -576,7 +576,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -584,7 +584,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -608,7 +608,7 @@ public class ImputationMinimac3Test {
 	@Test
 	public void testPipelineWithHapiUr() throws IOException, ZipException {
 
-		if (!new File("files/minimac/bin/hapi-ur").exists()) {
+		if (!new File("files/bin/hapi-ur").exists()) {
 			return;
 		}
 
@@ -628,7 +628,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -636,7 +636,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -688,7 +688,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -696,7 +696,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -737,7 +737,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -745,7 +745,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -789,7 +789,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -797,7 +797,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -845,7 +845,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -853,7 +853,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -906,7 +906,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -914,7 +914,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -953,7 +953,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -961,7 +961,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -1001,7 +1001,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -1009,7 +1009,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -1051,7 +1051,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -1059,7 +1059,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -1107,7 +1107,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -1115,7 +1115,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -1156,7 +1156,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -1164,7 +1164,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -1205,7 +1205,7 @@ public class ImputationMinimac3Test {
 		// add panel to hdfs
 		importRefPanel(FileUtil.path(configFolder, "ref-panels"));
 		// importMinimacMap("test-data/B38_MAP_FILE.map");
-		importBinaries("files/minimac/bin");
+		importBinaries("files/bin");
 
 		// run imputation
 		ImputationMinimac3Mock imputation = new ImputationMinimac3Mock(configFolder);
@@ -1213,7 +1213,7 @@ public class ImputationMinimac3Test {
 		assertTrue(result);
 
 		// run export
-		CompressionEncryptionMock export = new CompressionEncryptionMock("files/minimac");
+		CompressionEncryptionMock export = new CompressionEncryptionMock("files");
 		result = run(context, export);
 		assertTrue(result);
 
@@ -1372,7 +1372,7 @@ public class ImputationMinimac3Test {
 
 		@Override
 		protected void setupTabix(String folder) {
-			VcfFileUtil.setTabixBinary("files/minimac/bin/tabix");
+			VcfFileUtil.setTabixBinary("files/bin/tabix");
 		}
 
 	}
@@ -1394,7 +1394,7 @@ public class ImputationMinimac3Test {
 
 		@Override
 		protected void setupTabix(String folder) {
-			VcfFileUtil.setTabixBinary("files/minimac/bin/tabix");
+			VcfFileUtil.setTabixBinary("files/bin/tabix");
 		}
 
 	}
