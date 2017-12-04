@@ -17,7 +17,7 @@ public class RefPanelList {
 
 	public static String FILENAME = "panels.txt";
 	
-	private List<RefPanel> panels;
+	private List<RefPanel> panels = new Vector<>();
 
 	public RefPanelList() {
 		panels = new Vector<RefPanel>();

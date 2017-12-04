@@ -87,11 +87,8 @@ public class ImputationMinimac3 extends ParallelHadoopJobStep {
 		RefPanelList panels = null;
 		try {
 			panels = RefPanelList.loadFromFile(FileUtil.path(folder, RefPanelList.FILENAME));
-
 		} catch (Exception e) {
-
-			context.error("File " + RefPanelList.FILENAME + " not found.");
-			return false;
+			panels = new RefPanelList();
 		}
 
 		RefPanel panel = panels.getById(reference, context.getData("refpanel"));

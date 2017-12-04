@@ -55,11 +55,8 @@ public class FastQualityControl extends WorkflowStep {
 		RefPanelList panels = null;
 		try {
 			panels = RefPanelList.loadFromFile(FileUtil.path(folder, RefPanelList.FILENAME));
-
 		} catch (Exception e) {
-
-			context.error("File " + RefPanelList.FILENAME + " not found.");
-			return false;
+			panels = new RefPanelList();
 		}
 
 		// check reference panel
