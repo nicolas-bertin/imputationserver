@@ -11,5 +11,5 @@ sudo -u cloudgene hadoop fs -put /opt/cloudgene/tmp/map/genetic_map_hg19_withX.t
 
 # Connect Michigan Imputation Server with Cloudgene
 mv /opt/cloudgene/applications/imputationserver/files/config/settings.yaml /opt/cloudgene/config/.
-mv /opt/cloudgene/applications/imputationserver/target/minimac-cloud-assembly/minimac /opt/cloudgene/applications/.
-mv /opt/cloudgene/applications/imputationserver/target/minimac-cloud-assembly/pages /opt/cloudgene/.
+mv /opt/cloudgene/applications/imputationserver/target/minimac-cloud-improved-assembly/minimac /opt/cloudgene/applications/.
+mv /opt/cloudgene/applications/imputationserver/target/minimac-cloud-improved-assembly/pages /opt/cloudgene/.
